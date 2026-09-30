@@ -1,3 +1,4 @@
+echo "#!/bin/bash" > despliegue.sh
 echo "echo '=== MODO PRODUCCION ==='" >> despliegue.sh
 echo "echo 'Iniciando servicios en segundo plano...'" >> despliegue.sh
 echo "systemctl status nginx" >> despliegue.sh
