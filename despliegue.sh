@@ -1,5 +1,6 @@
-echo "echo '=== MODO PRODUCCION ==='" >> despliegue.sh
-echo "echo 'Iniciando servicios en segundo plano...'" >> despliegue.sh
-echo "systemctl status nginx" >> despliegue.sh
-echo "echo 'Listando directores activos:'" >> despliegue.sh
-echo "ls -la /var/www/html" >> despliegue.sh
+echo "#!/bin/bash" > despliegue.sh
+echo "echo '=== MODO DESARROLLO ==='" >> despliegue.sh
+echo "echo 'Listando ficheros del proyecto:'" >> despliegue.sh
+echo "ls -la" >> despliegue.sh
+echo "echo 'Comprobando procesos activos:'" >> despliegue.sh
+echo "ps aux | grep node" >> despliegue.sh
